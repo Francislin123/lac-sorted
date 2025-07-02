@@ -1,0 +1,20 @@
+spring:
+  jpa:
+    show-sql: false
+    format-sql: false
+    hibernate:
+      ddl-auto: none
+
+
+
+    # --- CONFIGURAÇÕES DO HIKARICP ---
+    hikari:
+      minimum-idle: 5             # Número mínimo de conexões ociosas para manter no pool.
+      maximum-pool-size: 20       # Número máximo total de conexões no pool.
+      idle-timeout: 600000        # Tempo máximo (em ms) que uma conexão pode ficar ociosa antes de ser removida. (10 minutos)
+      max-lifetime: 1800000       # Tempo máximo (em ms) que uma conexão pode permanecer no pool. (30 minutos)
+      connection-timeout: 30000   # Tempo máximo (em ms) para esperar por uma conexão do pool.
+      connection-test-query: SELECT 1 # Consulta para validar a conexão antes de usá-la. Essencial para PostgreSQL.
+
+server:
+  port: 8077
