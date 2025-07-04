@@ -5,12 +5,9 @@
 - Java 17
 - Spring Boot 3.5.0
 - Postgresql 42.7.7
-- HTTP Client (para integrações)
 - Lombok
 - Gson 2.10.1 (Google)
 - SpringDoc OpenAPI 2.5.0
-- JUnit 4.13.2 (para testes unitários)
-- Rest assured 5.4.0
 - Logs (Slf4j)
 - Spring Cache com Caffeine 
 
